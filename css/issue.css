@@ -1,0 +1,56 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    .container {
+        width: 100vw;
+        height: 90hv;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .panel {
+        height: 90vh;
+        border-radius: 50px;
+        cursor: pointer;
+        flex: 1;
+        margin: 10px;
+        position: relative;
+        transition: flex 0.7s ease-in;
+    }
+    
+    .panel.active {
+        flex: 5;
+    }
+    
+    .panel .title {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 35px;
+    }
+    
+    .href_list {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 100px;
+        display: none;
+        opacity: 0;
+    }
+    
+    .href_list a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .panel.active .href_list {
+        display: inline-flex;
+        opacity: 1;
+        transition: opacity 0.3 ease-in 0.4;
+    }
