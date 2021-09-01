@@ -48,19 +48,27 @@ div {
 `````css
 /* 动画代码 */
 @keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+    }
 }
 
 /* 应用动画的元素 */
 div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
+    width: 100px;
+    height: 100px;
+    background-color: #ac1616;
+    animation-name: example;
+    animation-duration: 4s;
 }
 `````
 

@@ -6,9 +6,7 @@ $(function() {
             });
             item.classList.add('active');
         });
-
-        //    
-    });;
+    });
     // $('.panel').click(function(e) {
     //     console.log('ss');
     // });
