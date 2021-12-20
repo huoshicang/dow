@@ -1,6 +1,7 @@
 $(function() {
     var spans = $('span');
     var divs = $("li div");
+    $('#content').html(`<object type="text/html" data=时钟/index.html width="100%" height="100%"></object>`);
 
     $.each((spans), function (index_span, span) {
         span.addEventListener('click',()=>{
